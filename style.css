@@ -1,0 +1,123 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+button {
+    border-radius: 20px;
+    color: white;
+    border: none;      /* removes default border */
+    outline: none;     /* removes default focus outline */
+    cursor: pointer;   /* optional, makes it clickable */
+    border: 2px solid rgba(122, 65, 65);
+    font-size: 24px;
+}
+button:hover{
+    opacity: 80%;
+    cursor: pointer;
+}
+
+.textbox {
+    width: 440px;
+    height: 80px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+    margin-top: 40px;
+    background-color: rgba(176, 192, 190);
+    border: 5px solid rgba(238, 141, 160);
+    box-sizing: border-box;
+    outline: none;                 /* keeps same effect */
+    display: flex;                 /* center content vertically */
+    align-items: center;
+    justify-content: flex-end;     /* numbers aligned to right */
+    padding-right: 12px;           /* add some spacing from right edge */
+    font-size: 2rem;               /* similar size to input text */
+    user-select: none;             /* prevent text selection */
+}
+
+/* hover effect */
+.textbox:hover {
+    opacity: 95%;
+}
+
+
+.headline{
+    color: salmon;
+}
+.top{
+    padding-top: 30px;
+}
+.bottom{
+    padding-top: 10px;
+    margin-bottom: 80px;
+}
+
+#container{
+    border: 2px solid  hsl(359, 48%, 29%);
+    border-radius: 36px;
+    background-color: rgba(240, 217, 225);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 620px;
+    width: 500px;
+}
+
+#buttons{
+    display: flex;
+    /* border: 2px solid blue; */
+    height: 480px;
+    width: 450px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+#upperRow{
+    /* border: 2px solid green; */
+    display: flex;
+    width: 440px;
+}
+
+#lowerRow{
+    /* border: 2px solid purple; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 360px;
+    width: 440px;
+    justify-content: center;
+    align-items: center;
+}
+
+.nButton{
+    margin: 2px;
+    height: 80px;
+    width: 80px;
+    aspect-ratio: 1/1;
+    background-color: #ff98a3;
+}
+#plus{
+    margin: 2px;
+    height: 164px;
+    width: 80px;
+    background-color: #ff98a3;
+}
+
+.wBtn{
+    width: 171px;
+    margin: 2px;
+    background-color: #ff98a3;
+}
+
+.nButton.diffcolor{
+    background-color: rgba(232, 139, 139);
+}
