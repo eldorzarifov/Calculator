@@ -24,7 +24,7 @@ button:hover{
 
 .textbox {
     width: 440px;
-    height: 80px;
+    height: 120px;
     border-radius: 20px;
     margin-bottom: 8px;
     margin-top: 40px;
@@ -36,7 +36,7 @@ button:hover{
     align-items: center;
     justify-content: flex-end;     /* numbers aligned to right */
     padding-right: 12px;           /* add some spacing from right edge */
-    font-size: 2rem;               /* similar size to input text */
+    font-size: 3rem;               /* similar size to input text */
     user-select: none;             /* prevent text selection */
 }
 
