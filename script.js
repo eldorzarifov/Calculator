@@ -121,7 +121,6 @@ equalsBtn.addEventListener('click', () => {
         let result = operate(firstNum, currentOperator, secondNum);
         console.log(result);
         secondNum = null;
-        // currentOperator = null;
         textbox.textContent = result;
         firstNum = result;
         resetDisplay = true;
@@ -129,3 +128,13 @@ equalsBtn.addEventListener('click', () => {
 })
 
 AC.addEventListener("click", reset);
+
+backspace.addEventListener("click", () => {
+    if(resetDisplay) return;
+
+    textbox.textContent = textbox.textContent.slice(0, -1)
+
+    if(textbox.textContent === ""){
+        textbox.textContent = "0"
+    }
+})
